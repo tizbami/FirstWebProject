@@ -4,43 +4,46 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bami Portfolio</title>
+    <link rel="stylesheet" href="styles/styles.css" />
     <script
       src="https://kit.fontawesome.com/d1c4d1135a.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
   </head>
   <body>
     <!-- header part -->
     <header>
-      <div>
-        <img src="images/logo.png" id="bamiLogo" alt="Brand logo" />
+      <div id="logo-nav">
+        <img
+          id="bamiLogo"
+          src="images/logo.png"
+          id="bamiLogo"
+          alt="Brand logo"
+        />
       </div>
 
       <nav>
         <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#blog">Blog</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
+          <li class="list"><a class="list" href="#home">Home</a></li>
+          <li class="list"><a class="list" href="#services">Services</a></li>
+          <li class="list"><a class="list" href="#contact">Contact</a></li>
+          <li class="list"><a class="list" href="#about">About</a></li>
+          <li class="list"><a class="list" href="#blog">Blog</a></li>
+          <li class="list"><a class="list" href="#skills">Skills</a></li>
+          <li class="list"><a class="list" href="#portfolio">Portfolio</a></li>
         </ul>
       </nav>
     </header>
 
     <!-- main part -->
     <main>
-      <section id="home">
-        <div id="left-box">
-          <!-- social icons -->
-          <div>
+      <section id="home" class="home-class">
+        <div id="left">
+          <div id="group-socials">
             <div class="socialicon">
               <i class="fa-brands fa-facebook"></i>
             </div>
-          </div>
-          <div>
             <div class="socialicon">
               <i class="fa-brands fa-twitter"></i>
             </div>
@@ -54,34 +57,49 @@
               <i class="fa-brands fa-github"></i>
             </div>
           </div>
-          <!-- text content  -->
-          <h1>
-            I am Oreoluwabamidele, Software Developer with long time experience
-            in this field
-          </h1>
-
-          <!-- first button   -->
-          <button>Portfolio</button>
-          <button class="button"><i class="fa-solid fa-play"></i></button>
-          <div id="right-box">
-            <img src="images/profile img.png" alt="man" />
+          <div id="text-content">
+            <div id="name-profile">
+              <h1>I am Oreoluwabamidele .O.</h1>
+              <p id="p-tag">
+                I'm Oreoluwabamidele, Software Developer with <br />long time
+                experience in this field.
+              </p>
+              <!-- first button   -->
+              <button class="btn">My Portfolio</button>
+              <button id="play-btn"><i class="fa-solid fa-play"></i></button>
+            </div>
           </div>
+        </div>
+
+        <div id="right">
+          <img id="img-profile" src="images/profile img.png" alt="man" />
         </div>
       </section>
 
       <section id="services">
         <div id="topBox">
-          <p>Services</p>
-          <h2>My Services</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
-            quidem in reprehenderit asperiores sed. Molestias minima dignissimos
-            laboriosam iste in natus numquam, reprehenderit rem tempore
-            praesentium asperiores, quisquam, ut repellendus.
+          <p class="small-title">SERVICES</p>
+          <h2 class="h2Services">My Services</h2>
+          <p id="service-p">
+            Lorem Ipsum is simply dummy text of the printing and <br />
+            typesetting industry. Lorem Ipsum standard dummy text.
           </p>
+          <hr class="hr" />
         </div>
-        <hr />
-        <div class="service-card">
+
+       
+
+        <div id="parent-card">
+          <div class="service-card">
+            <i class="fa-solid fa-box"></i>
+            <h2>Web Design</h2>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing typesetting
+              industry. simply dummy
+            </p>
+          </div>
+
+           <div class="service-card">
           <i class="fa-brands fa-github"></i>
           <h2>Web Development</h2>
           <p>
@@ -90,57 +108,43 @@
           </p>
         </div>
 
-        <div class="service-card">
-          <i class="fa-solid fa-box"></i>
-          <h2>Web Design</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
-            reiciendis, quisquam voluptates quos quidem.
-          </p>
+          <div class="service-card">
+            <i class="fa-brands fa-yoast"></i>
+            <h2>SEO Expart</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
+              reiciendis, quisquam voluptates quos quidem.
+            </p>
+          </div>
+          <div class="service-card">
+            <i class="fa-solid fa-video"></i>
+            <h2>Video Editing</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
+              reiciendis, quisquam voluptates quos quidem.
+            </p>
+          </div>
+          <div class="service-card">
+            <i class="fa-solid fa-camera"></i>
+            <h2>Photography</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
+              reiciendis, quisquam voluptates quos quidem.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <i class="fa-brands fa-apple"></i>
+            <h2>App Developing</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
+              reiciendis, quisquam voluptates quos quidem.
+            </p>
+          </div>
+
+        
         </div>
 
-        <div class="service-card">
-          <i class="fa-solid fa-box"></i>
-          <h2>Web Design</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
-            reiciendis, quisquam voluptates quos quidem.
-          </p>
-        </div>
-        <div class="service-card">
-          <i class="fa-solid fa-video"></i>
-          <h2>Video Editing</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
-            reiciendis, quisquam voluptates quos quidem.
-          </p>
-        </div>
-        <div class="service-card">
-          <i class="fa-solid fa-camera"></i>
-          <h2>Photography</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
-            reiciendis, quisquam voluptates quos quidem.
-          </p>
-        </div>
-
-        <div class="service-card">
-          <i class="fa-brands fa-apple"></i>
-          <h2>App Developing</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
-            reiciendis, quisquam voluptates quos quidem.
-          </p>
-        </div>
-
-        <div class="service-card">
-          <i class="fa-brands fa-yoast"></i>
-          <h2>SEO Expart</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
-            reiciendis, quisquam voluptates quos quidem.
-          </p>
-        </div>
       </section>
 
       <!-- about part -->
@@ -359,9 +363,9 @@
             <div>
               <blockquote>
                 <i class="fa-solid fa-quote-right"></i>
-                "In promotion and of advertising  <br>Lorem ipsum dolor sit amet
-                consectetur, adipisicing elit."
-                <br>
+                "In promotion and of advertising <br />Lorem ipsum dolor sit
+                amet consectetur, adipisicing elit."
+                <br />
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
