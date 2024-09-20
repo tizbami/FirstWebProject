@@ -68,13 +68,12 @@ ul {
 }
 
 .socialicon {
-  display: inline-block;
   width: 50px;
   height: 50px;
   background-color: rgb(36, 38, 59);
   border-radius: 50%;
   border: 2px solid rgb(246, 73, 86);
-  display: flex;
+  display: flex; 
   align-items: center;
   justify-content: center;
   margin: 10px;
@@ -129,10 +128,12 @@ ul {
   background-color: rgb(246, 73, 86);
   color: white;
   border: 1px;
-  width: 80px;
+  width: 90px;
+  height: 50px;
   padding: 15px;
   border-radius: 40%;
   font-size: 18px;
+  margin-left: 20px;
 }
 
 #right {
@@ -190,11 +191,7 @@ ul {
   flex-wrap: wrap;
   width: 90%;
   padding-left: 220px;
-  
-  
-
 }
-
 
 .service-card {
   background-color: rgb(36, 38, 59);
@@ -207,8 +204,6 @@ ul {
   text-align: left;
   justify-content: center;
   align-items: center;
-;
-  
 }
 
 .service-card i {
@@ -237,4 +232,3 @@ ul {
 .service-card:hover {
   background-color: rgb(246, 73, 86);
 }
-
